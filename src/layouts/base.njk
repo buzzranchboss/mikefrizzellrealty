@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ title }} - {{ site.author }}</title>
+  <meta name="description" content="{{ description or 'Michael Frizzell, Affiliate Broker — Memphis Real Estate' }}" />
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>{{ title }}</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Michael Frizzell<span>Realty</span></div>
+      <nav>
+        <a href="#contact" class="btn btn-sm">Contact Me</a>
+      </nav>
+    </div>
   </header>
+
   <main>
     {{ content | safe }}
   </main>
-  <footer>
-    <p>&copy; {{ site.author }} {{ now.year }}</p>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 2026 }} Michael Frizzell Realty &bull; Adaro Realty &bull; Cordova, TN &bull; <a href="tel:9014853203">(901) 485-3203</a></p>
+    </div>
   </footer>
 </body>
 </html>
