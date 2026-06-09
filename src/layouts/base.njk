@@ -3,11 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{{ description or 'Michael Frizzell, Affiliate Broker — Memphis Real Estate' }}" />
+
+  <!-- Primary SEO -->
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/main.css" />
+  <meta name="description" content="{{ description or 'Michael Frizzell is a licensed real estate broker serving Memphis, Cordova, Germantown, Arlington, and surrounding areas. Helping buyers and sellers get results.' }}" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mikefrizzellrealty.com{{ page.url }}" />
+
+  <!-- Open Graph (Facebook, LinkedIn previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mikefrizzellrealty.com{{ page.url }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description or 'Michael Frizzell is a licensed real estate broker serving Memphis, Cordova, Germantown, Arlington, and surrounding areas.' }}" />
+  <meta property="og:image" content="https://mikefrizzellrealty.com/images/og-preview.jpg" />
+  <meta property="og:site_name" content="Mike Frizzell Realty" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description or 'Michael Frizzell — Memphis real estate broker helping buyers and sellers.' }}" />
+  <meta name="twitter:image" content="https://mikefrizzellrealty.com/images/og-preview.jpg" />
+
+  <!-- JSON-LD Structured Data — RealEstateAgent -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Michael Frizzell",
+    "url": "https://mikefrizzellrealty.com",
+    "telephone": "+19014853203",
+    "email": "mikefrizzell901@gmail.com",
+    "image": "https://mikefrizzellrealty.com/images/mike-frizzell.jpg",
+    "description": "Licensed real estate broker serving Memphis, Cordova, Germantown, Arlington, and surrounding areas. Helping buyers and sellers get results.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Memphis",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Memphis, TN",
+      "Cordova, TN",
+      "Germantown, TN",
+      "Arlington, TN",
+      "Bartlett, TN",
+      "Collierville, TN"
+    ],
+    "knowsAbout": ["Residential Real Estate", "Home Buying", "Home Selling", "Memphis Real Estate Market"],
+    "sameAs": [
+      "https://www.homes.com/real-estate-agents/michael-frizzell/31pkgtg/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
   <header class="site-header">
