@@ -52,8 +52,8 @@ img { max-width: 100%; display: block; }
 /* ─── About ─── */
 .about { padding: 5rem 0; background: var(--white); }
 .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; }
-.about-photo img { border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
-.about-photo { background: var(--light); border-radius: 8px; min-height: 300px; display: flex; align-items: center; justify-content: center; }
+.about-photo { background: var(--light); border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.about-photo img { border-radius: 50%; width: 260px; height: 260px; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,0,0,0.20); border: 4px solid var(--gold); }
 .about-text h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--navy); margin-bottom: 1rem; }
 .about-text p { color: #444; margin-bottom: 1rem; }
 .credentials { list-style: none; margin-top: 1.5rem; }
